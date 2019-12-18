@@ -1,0 +1,24 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Novotroitsk-News</title>
+	<link rel="stylesheet" type='text/css' href='{%static "main/style.css"%}'>
+</head>
+<body>
+	<header>
+		<a class='main' href = '{%url "index"%}' ><span>NOVOTROITSK</span>-NEWS</a>
+		<p class='ps'>Made by: Petkau Konstantin</p>
+		<div>
+			<a href='{%url "category" "Политика"%}' class='category'>Политика</a>
+		    <a href='{%url "category" "Спорт"%}' class='category'>Спорт</a>
+		    <a href='{%url "category" "Культура и музыка"%}' class='category'>Культура и музыка</a>
+		    <a href='{%url "category" "Проишествия"%}' class='category'>Проишествия</a>
+	    </div>
+	</header>
+	<main>
+		{%block content%}
+		{%endblock%}
+    </main>
+</body>
+</html>

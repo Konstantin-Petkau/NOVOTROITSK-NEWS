@@ -1,0 +1,30 @@
+{%extends "base.html"%}
+{%block content%}
+    <h1 class='citie'>{{category}} в Новотроицке</h1>
+    {%for i in novotroitsk_news%}
+        <div>
+        	<h1>{{i.title}}</h1>
+        	<p>{{i.subtitle}}</p>
+        	<a href='{%url "article" i.id%}'>Читать далле...</a>
+        	<p>{{i.pub_date}}</p>
+        </div>
+    {%endfor%}
+    <h1 class='citie'>{{category}} в Орске</h1>
+    {%for i in orsk_news%}
+        <div>
+        	<h1>{{i.title}}</h1>
+        	<p>{{i.subtitle}}</p>
+        	<a href='{%url "article" i.id%}'>Читать далле...</a>
+        	<p>{{i.pub_date}}</p>
+        </div>
+    {%endfor%}
+    <h1 class='citie'>{{category}} в Гае</h1>
+    {%for i in guy_news%}
+        <div>
+        	<h1>{{i.title}}</h1>
+        	<p>{{i.subtitle}}</p>
+        	<a href='{%url "article" i.id%}'>Читать далле...</a>
+        	<p>{{i.pub_date}}</p>
+        </div>
+    {%endfor%}
+{%endblock%}

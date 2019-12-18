@@ -1,0 +1,9 @@
+{%extends 'base.html'%}
+{%block content%}
+<div class='article_block'>
+    <h1 class='article_title'>{{news_article.title}}</h1>
+    <p class='article_subtitle'>{{news_article.subtitle}}</p><br>
+    <p class='article_text'>{{news_article.text}}</p>
+    <p>{{news_article.pub_date}}</p>
+</div>
+{%endblock%}
